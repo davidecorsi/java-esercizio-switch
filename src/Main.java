@@ -13,5 +13,25 @@ public class Main {
 		int x = input.nextInt();
 		System.out.print("Inserisci il secondo numero ");
 		int y = input.nextInt();
+		Integer r = null;
+		switch(o) {
+			case "+":
+				r = x + y;
+				break;
+			case "-":
+				r = x - y;
+				break;
+			case "*":
+				r = x * y;
+				break;
+			case "/":
+				r = x / y;
+				break;
+			default:
+				System.out.println("Operazione non consentita");
+		}
+		if(r != null) {
+			System.out.println("Il risultato dell'operazione è " + r);
+		}
 	} 
 }
